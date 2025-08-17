@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>MSN Chat - Login</title>
+        <style>
+            html{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            body { 
+            background: linear-gradient(90deg, #303058 0%, #01030a 100%); 
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            padding: 20px;
+            margin: 0;  }
+            
+            .logo{
+                color: white;
+            }
+
+            fieldset{
+                border: none;
+            }
+
+            form{
+                width: 300px;
+                margin: 0 auto;
+              
+                border-radius: 5px;
+               
+            }
+            i{
+            color: #ecf1f1;
+            }
+
+            #user + i {
+            color: #63f75e;
+            }
+            #pass + i {
+            color: #E5B80B;  
+            }
+            .logo{
+                color: white;
+            }
+            
+          
+            .login-container { 
+            position: relative;
+            background: rgba(255,255,255,0.3 ou 0.4); 
+            backdrop-filter: blur(10px);
+            border: transparent1px solid rgba(255,255,255,0.5);
+            padding: 40px 30px; 
+            border-radius: 30px; 
+            box-shadow: 0 0 30px rgba(211, 210, 210, 0.2);
+            width: 400px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: center; }
+
+            label{
+                margin-bottom: .25em;
+                display: none;
+            }
+            input{
+                padding: .75em;
+                border-radius: 5px;
+                margin-bottom: 1.5em;
+                border: 1px solid #acaaaa;
+                font-size: 1em;
+            }
+            
+            legend{
+                padding: 1em;
+                text-align: center;
+                font-weight: bold;
+                color: #ecf1f1;
+                font-size: 1.2em;
+                margin-bottom: .5em;
+            }
+
+            .btn{
+                width: fit-content;
+                margin: auto;
+                background-color: white;
+                color: rgb(31, 31, 85);
+                cursor: pointer;
+                display: flex;
+                gap: 1em;
+                padding: 10;
+            }
+
+            .btn:hover {
+            background-color: rgb(31, 31, 85);   
+            color: black;             
+            transform: scale(1.05);  
+            transition: 0.3s;         
+            }
+       
+            .test-users { 
+            margin-top: 20px; 
+            font-size: 12px; 
+            color: #666; 
+            display:none;
+            
+            }
+        </style>
+    </head>
+    <meta charset="UFT-8">
+    <title>Login</title>
+    <body>
+        <div class="login-container">
+        <h1 class="logo">🟢 MSN Chat</h1>
+        <form id="loginForm" method="get">
+            <fieldset>
+                <legend>Welcome Back!</legend>
+
+                <label for="user">Usarneme</label>
+                <input type="text" id="user" placeholder="username" required>
+                <i class="fa-solid fa-user"></i>
+
+                <label for="pass">Password</label>
+                <input type="password" id="pass" placeholder="password" required>
+                <i class="fa-solid fa-lock"></i>
+
+                <div class="actions">
+                    <input type="submit" value="login" class="btn">
+                </div>
+
+            </fieldset>
+        </div>
+        </form>
+        <div class="test-users">
+            <strong>Test Users:</strong><br>
+                alice / password123<br>
+                bob / password123<br>
+                carol / password123
+        </div>
+        
